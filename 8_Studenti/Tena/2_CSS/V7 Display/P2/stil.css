@@ -1,0 +1,20 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #333;
+  margin: 0;
+}
+ul {
+  border: 1px solid #ccc;
+  list-style-type: none;
+  padding-left: 0;
+}
+li {
+  background-color: #ffc;
+  display: inline-block;
+  width: 19%;
+}
+p {
+  border: 1px solid #ccc;
+  display: inline-block;
+  width: 19%;
+}
