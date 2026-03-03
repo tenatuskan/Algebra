@@ -8,18 +8,28 @@ body {
 }
 .wrapper div {
   border: 1px solid #666;
-  width: 150px;
+  /* width: 150px; */
   background-color: #eee;
   text-align: center;
   padding: 1em;
-  margin: 1em;
+  /* margin: 1em; */
 }
 .wrapper {
-  border: 1px dashed #666;
+  /* border: 1px dashed #666; */
   padding: 1em;
 }
 .flex-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-item:nth-child {
+  width: 32%;
+  height: 100px;
+  margin-bottom: 2%;
+}
+
+.flex-item:nth-child(4n + 1) {
+  flex-basis: 100%;
 }

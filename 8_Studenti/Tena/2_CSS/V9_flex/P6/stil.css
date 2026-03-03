@@ -17,9 +17,9 @@ body {
 .wrapper {
   border: 1px dashed #666;
   padding: 1em;
+  height: 600px;
 }
 .flex-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  align-items: stretch;
 }
