@@ -1,0 +1,50 @@
+* {
+  margin: 1em;
+}
+
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: verdana, geneva, tahoma, sans-serif;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: #eee;
+  padding: 1em;
+  align-content: center;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  color: #800;
+}
+header p {
+  font-size: 20px;
+}
+header a {
+  color: #ff6;
+}
+
+section h2 {
+  font-family: Courier, monospace;
+}
+section p {
+  text-align: justify;
+}
+section a {
+  color: #800;
+}
+
+article {
+  background-color: #800;
+}
+article p {
+  color: #eee;
+}
+article a {
+  color: #fff;
+}/*# sourceMappingURL=stil.css.map */

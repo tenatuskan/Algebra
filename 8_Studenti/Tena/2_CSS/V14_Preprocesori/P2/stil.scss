@@ -1,0 +1,54 @@
+$color1: #eee;
+$color2: #333;
+$color3: #800;
+
+$font1: verdana, geneva, tahoma, sans-serif;
+$font2: Courier, monospace;
+* {
+  margin: 1em;
+}
+body {
+  background-color: $color1;
+  color: $color2;
+  font-family: $font1;
+}
+header,
+footer {
+  background-color: $color2;
+  color: $color1;
+  padding: 1em;
+  align-content: center;
+}
+header {
+  text-align: center;
+  h1 {
+    color: $color3;
+  }
+  p {
+    font-size: 20px;
+  }
+  a {
+    color: #ff6;
+  }
+}
+section {
+  h2 {
+    font-family: $font2;
+  }
+
+  p {
+    text-align: justify;
+  }
+  a {
+    color: $color3;
+  }
+}
+article {
+  background-color: $color3;
+  p {
+    color: $color1;
+  }
+  a {
+    color: #fff;
+  }
+}
