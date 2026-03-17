@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern CSS</title>
+    <style>
+      *,
+      *::before *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --scheme: dark;
+        --color-dark: #333;
+        --color-light: #f5f5f5;
+      }
+
+      body {
+        height: 100vh;
+        background: url("https://picsum.photos/1200/800");
+      }
+      h1 {
+        margin: 0.5rem;
+        text-align: center;
+        font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
+      }
+      .blur {
+        margin: 1rem auto;
+        padding: 10px;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.1);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+      }
+      .scale {
+        font-size: clamp(1rem, 1rem + 0.5vw, 1.25rem);
+        padding: 10px;
+        border-radius: 12px;
+        color: if(
+          style(--scheme: dark): var(--color-light) ; else: var(--color-dark)
+        );
+        background-color: if(
+          style(--scheme: dark): var(--color-dark) ; else: var(--color-light)
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Modern CSS</h1>
+    <p>
+      Minim non magna laborum ad nostrud ullamco et commodo quis. Irure enim
+      dolore quis labore labore ex labore. Aliqua do officia in voluptate. In
+      commodo sunt commodo irure sit minim ullamco quis et mollit ad deserunt.
+      Eu in culpa tempor proident nulla cillum Lorem. Occaecat ipsum ea et id
+      ea.
+    </p>
+    <div class="blur">
+      <p>
+        Sit duis esse consequat aliqua quis dolor cillum. Sit proident duis id
+        pariatur irure voluptate fugiat nulla do eu incididunt. Aliqua elit
+        mollit id magna irure nisi dolore consequat aute.
+      </p>
+    </div>
+    <p>
+      Pariatur excepteur ea minim aliqua. Consectetur proident amet excepteur et
+      magna sunt voluptate occaecat proident laboris deserunt. Ipsum pariatur
+      incididunt consectetur in ad mollit sit tempor aliqua sunt. Culpa sit quis
+      reprehenderit sunt dolor consequat ea exercitation anim. In nisi laborum
+      anim deserunt sint commodo.
+    </p>
+    <div class="user-name"></div>
+    Block Element Modifier
+    <form action=""></form>
+  </body>
+</html>
